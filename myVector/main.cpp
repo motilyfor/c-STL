@@ -52,12 +52,12 @@ int main()
     //1.1 remove
     const auto new_end(remove(begin(v), end(v), 2));
 
-    for (auto i : v)
-    {
-        cout << i << ", ";
-    }
-    cout << '\n';
-    cout_size(v);
+    // for (auto i : v)
+    // {
+    //     cout << i << ", ";
+    // }
+    // cout << '\n';
+    // cout_size(v);
 
     //1.2 erase
     v.erase(new_end, end(v));
@@ -69,7 +69,7 @@ int main()
     cout << '\n';
 
     //1.3 capacity 与 size区别
-    cout_size(v);
+    // cout_size(v);
 
     //1.4 尾部插入
     for (int i = 0; i < 10; i++)
@@ -84,9 +84,11 @@ int main()
     //1.6 手动指定内存空间
     v.reserve(100);
 
-    //1.7 无序vector删除元素
-    quick_remove(v, 10);
-    quick_remove(v, std::find(std::begin(v), std::end(v), 1));
+    // //1.7 无序vector删除元素
+    // quick_remove(v, 10);
+    // quick_remove(v, std::find(std::begin(v), std::end(v), 1));
+
+
 
     return 0;
 }
